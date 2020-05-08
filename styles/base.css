@@ -1,8 +1,23 @@
-
+* {
+  outline: 1px blue dotted;
+}
 
 body {
-  max-width: 767px;
-  margin-left: 25%;
-  margin-right: 25%;
-  float: left;
+  max-width: 480px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+@media screen and (min-width:481px) {
+  body {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width:769px) {
+  body {
+    max-width: 960px;
+  }
 }
